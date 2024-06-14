@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="hangman.HangmanController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane prefHeight="622.0" prefWidth="470.0" style="-fx-border-color: #000000; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.MainMenuController">
+   <children>
+      <AnchorPane layoutX="8.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="459.0">
+         <children>
+            <ImageView fitHeight="663.0" fitWidth="459.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/1e30864f79e44bdcc7575642d22177d1.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="66.0" layoutY="120.0" text="Hang-Man">
+               <font>
+                  <Font name="Old English Text MT" size="70.0" />
+               </font>
+            </Label>
+            <Button fx:id="SignupBTN" layoutX="66.0" layoutY="519.0" mnemonicParsing="false" onAction="#signup" prefHeight="47.0" prefWidth="108.0" style="-fx-background-color: #080808; -fx-background-radius: 30;" text="Sign up">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="LoginBTN" layoutX="286.0" layoutY="519.0" mnemonicParsing="false" onAction="#login" prefHeight="47.0" prefWidth="108.0" style="-fx-background-color: #080808; -fx-background-radius: 30;" text="log in">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="198.0" layoutY="202.0" text="find the buttons">
+               <font>
+                  <Font name="Vladimir Script" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

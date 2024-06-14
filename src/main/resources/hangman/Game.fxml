@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="622.0" prefWidth="470.0" style="-fx-border-color: #000000; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.GameController">
+    <children>
+        <AnchorPane layoutX="8.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="459.0">
+            <children>
+                <ImageView fitHeight="663.0" fitWidth="459.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/1e30864f79e44bdcc7575642d22177d1.jpg" />
+                    </image>
+                </ImageView>
+            <AnchorPane layoutX="6.0" layoutY="7.0" prefHeight="597.0" prefWidth="446.0" style="-fx-background-color: #000000;">
+               <children>
+                      <Label layoutX="148.0" layoutY="14.0" prefHeight="34.0" prefWidth="150.0" text="Hang-Man" textFill="WHITE">
+                          <font>
+                              <Font name="Old English Text MT" size="30.0" />
+                          </font>
+                      </Label>
+                  <ImageView fx:id="one" fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/one.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="two" fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/two.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="three" fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/three.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="four" fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/four.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="five" fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/five.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="six" fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/sixnseven.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="seven" fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/eight.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="Input" layoutX="197.0" layoutY="407.0" prefHeight="26.0" prefWidth="25.0" />
+                  <Button fx:id="checkBTN" layoutX="232.0" layoutY="407.0" mnemonicParsing="false" onAction="#check" style="-fx-background-color: #000000;" text="✔" textFill="WHITE" />
+                  <AnchorPane layoutX="17.0" layoutY="467.0" prefHeight="41.0" prefWidth="411.0" style="-fx-background-color: ffffff;">
+                     <children>
+                        <Label fx:id="first" layoutX="23.0" layoutY="6.0" text="A" visible="false">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="second" layoutX="76.0" layoutY="6.0" text="A" visible="false">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="third" layoutX="126.0" layoutY="6.0" text="A" visible="false">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fourth" layoutX="178.0" layoutY="6.0" text="A" visible="false">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fifth" layoutX="228.0" layoutY="6.0" text="A" visible="false">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sixth" layoutX="279.0" layoutY="6.0" text="A" visible="false">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="seventh" layoutX="328.0" layoutY="8.0" text="A" visible="false">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="eighth" layoutX="374.0" layoutY="9.0" text="A" visible="false">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Line endX="2.199981689453125" endY="186.5999755859375" layoutX="229.0" layoutY="341.0" startX="2.199981689453125" startY="117.79998779296875" />
+                  <Line endX="63.000030517578125" endY="203.79998779296875" layoutX="217.0" layoutY="345.0" startX="63.000030517578125" startY="92.5999755859375" />
+                  <Line endX="63.000030517578125" endY="203.79998779296875" layoutX="269.0" layoutY="345.0" startX="63.000030517578125" startY="92.5999755859375" />
+                  <Line endX="63.000030517578125" endY="203.79998779296875" layoutX="317.0" layoutY="354.0" startX="63.000030517578125" startY="92.5999755859375" />
+                  <Line endX="63.000030517578125" endY="203.79998779296875" layoutX="117.0" layoutY="345.0" startX="63.000030517578125" startY="92.5999755859375" />
+                  <Line endX="63.000030517578125" endY="203.79998779296875" layoutX="60.0" layoutY="354.0" startX="63.000030517578125" startY="92.5999755859375" />
+                  <Line endX="63.000030517578125" endY="203.79998779296875" layoutX="12.0" layoutY="354.0" startX="63.000030517578125" startY="92.5999755859375" />
+                  <Label fx:id="msg" layoutX="138.0" layoutY="525.0" text="You Won!" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Old English Text MT" size="40.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="backBTN" layoutX="28.0" layoutY="18.0" mnemonicParsing="false" onAction="#switchToMenu" style="-fx-background-color: 000000; -fx-background-radius: 30;" text="Back" textFill="WHITE" underline="true">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="timeShow" layoutX="332.0" layoutY="65.0" text="Time: " textFill="WHITE" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scoreShow" layoutX="333.0" layoutY="26.0" text="Score: " textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
